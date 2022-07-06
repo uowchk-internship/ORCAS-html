@@ -470,69 +470,6 @@ head>
     overflow: visible;
     position: static;
     width: auto;
-
-  }
-
-  .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
   }
 </style>
 <link rel="canonical" href="https://www.uowchk.edu.hk/about-us/about-the-faculties/" />
@@ -578,10 +515,6 @@ head>
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     f.parentNode.insertBefore(j, f);
   })(window, document, "script", "dataLayer", "GTM-TXSMLJ6");
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
 </script>
 <!-- End Google Tag Manager -->
 
@@ -1014,7 +947,7 @@ head>
             <div class="grid-x align-left">
               <div class="uw-masthead__content">
                 <h1 class="cell js-scroll-reveal--left uw-masthead__title uw-masthead__subbrand--title">
-                  ORCAS
+                  Search
                 </h1>
               </div>
             </div>
@@ -1022,99 +955,49 @@ head>
         </div>
       </section>
       <!-- /content-type-layout: public/master-header-with-nav !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
       <!--startindex-->
-      <section class="page-content grid-container uw-text-block">
-        <span id="d.en.105001"></span>
-        <div class="grid-x grid-padding-x">
-          <div class="cell large-auto">
-            <p style="text-align: right">
-              <a href="https://www.uowchk.edu.hk/current-students/student-learning-support-system/">Back</a>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="page-table grid-container">
-        <table>
-          <tr>
-            <td>
-              <table style="width:100%">
-                <h2>Monthly Ranking</h2>
-                <tr>
-                  <td>Rank</td>
-                  <td>Student Name</td>
-                  <td>Quantity</td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">1</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">2</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">3</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">4</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">5</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-              </table>
+      <!--Artical Hearded-->
+      <table style="color: #001641; border: 0px solid black; background-color: #f2f2f2;">
+        <tr>
+          <td>
+            <h6>views <br></h6>
+          </td>
+          <td>
+            <h2>Social Science</h2>
+          </td>
+          <td>
+            <section class="page-content grid-container uw-text-block">
+              <span id="d.en.105001"></span>
+              <div class="grid-x grid-padding-x">
+                <div class="cell large-auto">
+                  <p style="text-align: right">
+                    <a href="https://www.uowchk.edu.hk/current-students/student-learning-support-system/">Back</a>
+                  </p>
+                </div>
+              </div>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+          <td>
+            <h4>Chris Fu Social science club</h4>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <h3>Video | Published Online: 16 June 2022 </h3>
+          </td>
+          <td></td>
+        </tr>
+      </table>
 
-            </td>
-            <td>
-              <table style="width:100%">
-                <h2>OverAll Ranking</h2>
-                <tr>
-                  <td>Rank</td>
-                  <td>Student Name</td>
-                  <td>Quantity</td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">1</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">2</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">3</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">4</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">5</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-              </table>
 
-            </td>
-          </tr>
-        </table>
-        <div class="popup" onclick="myFunction()">Click me to check the rewards of top 3 students
-          <span class="popuptext" id="myPopup">you have got the rewards! congrad!</span>
-        </div>
-      </section>
+
+
     </main>
     <!--stopindex-->
     <!-- new Vivo-based (in Section Meta content type) "public/footer" -->
