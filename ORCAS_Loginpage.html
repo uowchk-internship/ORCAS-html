@@ -1,4 +1,6 @@
 head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -472,68 +474,6 @@ head>
     width: auto;
 
   }
-
-  .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
 </style>
 <link rel="canonical" href="https://www.uowchk.edu.hk/about-us/about-the-faculties/" />
 
@@ -578,10 +518,6 @@ head>
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     f.parentNode.insertBefore(j, f);
   })(window, document, "script", "dataLayer", "GTM-TXSMLJ6");
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
 </script>
 <!-- End Google Tag Manager -->
 
@@ -1034,88 +970,19 @@ head>
           </div>
         </div>
       </section>
-      <section class="page-table grid-container">
-        <table>
-          <tr>
-            <td>
-              <table style="width:100%">
-                <h2>Monthly Ranking</h2>
-                <tr>
-                  <td>Rank</td>
-                  <td>Student Name</td>
-                  <td>Quantity</td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">1</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">2</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">3</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">4</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">5</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-              </table>
-
-            </td>
-            <td>
-              <table style="width:100%">
-                <h2>OverAll Ranking</h2>
-                <tr>
-                  <td>Rank</td>
-                  <td>Student Name</td>
-                  <td>Quantity</td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">1</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">2</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">3</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">4</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="color: #ED0A00;">5</td>
-                  <td>ivan</td>
-                  <td></td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-        </table>
-        <div class="popup" onclick="myFunction()">Click me to check the rewards of top 3 students
-          <span class="popuptext" id="myPopup">you have got the rewards! congrad!</span>
-        </div>
-      </section>
     </main>
+    <section class="page-form grid-container">
+        <form>
+          <label for="loginEmail">Email:</label>
+          <input type="text" id="loginEmail" name="loginPart"><br>
+          <label for="loginPw">Password:</label>
+          <input type="text" id="loginPw" name="loginPart"><br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+          <button type="button" class="btn btn-danger">Login</button>
+          </div>
+        </form>
+      </section>
+      <div style="padding-bottom: 100px;"></div>
     <!--stopindex-->
     <!-- new Vivo-based (in Section Meta content type) "public/footer" -->
     <!-- Start ViVO Footer -->
@@ -1125,135 +992,7 @@ head>
       </button>
     </div>
 
-    <footer>
-      <div class="grid-container">
-        <div class="footer-links">
-          <div class="grid-x medium-up-2 large-up-3 xlarge-up-6 align-justify">
-            <div class="cell xlarge-auto links-block">
-              <span class="footer-links__title js-sub-menu-toggle">Services and help</span>
-              <ul class="menu vertical">
-                <li><a href="/current-students/">Current students</a></li>
-                <li><a href="/study-at-uowchk/">Study at UOWCHK</a></li>
-                <li>
-                  <a href="/study-at-uowchk/find-programmes/">What to study</a>
-                </li>
-                <li>
-                  <a href="/study-at-uowchk/your-future-awaits/">How to apply</a>
-                </li>
-              </ul>
-            </div>
-            <div class="cell xlarge-auto links-block">
-              <span class="footer-links__title js-sub-menu-toggle">Faculties</span>
-              <ul class="menu vertical">
-                <li>
-                  <a href="/about-us/about-the-faculties/arts-humanities/">Rank</a>
-                </li>
-                <li>
-                  <a href="/about-us/about-the-faculties/business/">Business</a>
-                </li>
-                <li>
-                  <a href="/about-us/about-the-faculties/science-technology/">Upload</a>
-                </li>
-                <li>
-                  <a href="/about-us/about-the-faculties/social-sciences/">Search</a>
-                </li>
-              </ul>
-            </div>
-            <div class="cell xlarge-auto links-block">
-              <span class="footer-links__title js-sub-menu-toggle">UOW entities</span>
-              <ul class="menu vertical">
-                <li><a href="https://www.uow.edu.au/">UOW Australia</a></li>
-                <li>
-                  <a href="https://www.uowcollege.edu.au/">UOW College Australia</a>
-                </li>
-                <li><a href="https://www.uowdubai.ac.ae/">UOW in Dubai</a></li>
-                <li>
-                  <a href="https://www.uowglobalenterprises.com.au/">UOW Global Enterprises</a>
-                </li>
-                <li><a href="https://uowmkdu.edu.my/">UOW Malaysia KDU</a></li>
-              </ul>
-            </div>
-
-            <div class="links-block cell">
-              <!-- inc:67 -->
-              <div class="footer-links__title js-sub-menu-toggle">
-                Connect with us
-              </div>
-              <div class="uw-social-links js-scroll-reveal">
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/uowchkcccu" aria-label="UOW on Facebook"><img
-                        src="/site-assets/logos/social-icons/icon-facebook-bw.svg" ct-id="2077" alt="Facebook" />
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.youtube.com/c/uowcollegehongkong"><img
-                        src="/site-assets/logos/social-icons/icon-youtube-bw.svg" ct-id="2079" alt="Youtube" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/uowcollegehk/"><img
-                        src="/site-assets/logos/social-icons/icon-instagram-bw.svg" ct-id="2078" alt="Instagram" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <ul class="menu vertical"></ul>
-              <!-- /inc -->
-              <!-- inc:115 -->
-              <!-- /inc -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="uw-section-break" />
-
-      <div class="grid-container">
-        <!-- content type: site config, public/footer-contact -->
-        <div class="footer-address-logos">
-          <div class="grid-x grid-margin-x">
-            <div class="footer-address cell medium-6">
-              <p>
-                <strong>UOW College Hong Kong<br />
-                  1/F, Le Billionnaire<br />
-                  46 Sa Po Road<br />
-                  Kowloon City, Hong Kong<br />
-                  Phone: Main campus - <a href="tel:2707 3111">2707 3111</a><br />
-                  Email:
-                  <a href="mailto:uowchk-main@uow.edu.au">uowchk-main@uow.edu.au</a></strong>
-              </p>
-            </div>
-
-            <ul class="footer-logos cell medium-6 menu">
-              <li>
-                <a href="https://www.uow.edu.au/" target="_blank"><img src="/site-assets/logos/logo.svg"
-                    alt="University of Wollongong Australia" /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="grid-x grid-margin-x">
-            <p class="cell large-6 align-right">
-              UOW College Hong Kong is an organisation that supports, embraces
-              and celebrates diverse cultures.
-            </p>
-            <div class="cell large-6 align-right large-text-right">
-              <p>
-                <strong>Copyright © 2022 University of Wollongong</strong><br /><a
-                  href="https://www.uowchk.edu.hk/about-us/legal-information/">Privacy &amp; cookie usage</a>
-                |&nbsp;<a href="https://www.uow.edu.au/about/governance/copyright-and-disclaimer/">Copyright &amp;
-                  disclaimer</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End content type: site config, public/footer-contact -->
-
-        <!-- site config - public/footer-contact -->
-      </div>
-    </footer>
+    
     <!-- End ViVO Footer -->
 
     <div class="uw-search-overlay-main" role="search">
