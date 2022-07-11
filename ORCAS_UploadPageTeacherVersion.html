@@ -470,6 +470,7 @@ head>
     overflow: visible;
     position: static;
     width: auto;
+
   }
 </style>
 <link rel="canonical" href="https://www.uowchk.edu.hk/about-us/about-the-faculties/" />
@@ -504,6 +505,15 @@ head>
 <script defer="" src="https://www.uowchk.edu.hk/site-assets/scripts/uow/t4-updates.js"></script>
 <!-- T4 JS-->
 <!-- Google Tag Manager -->
+
+<!--datapicker-->
+<link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
 <script>
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
@@ -515,6 +525,15 @@ head>
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     f.parentNode.insertBefore(j, f);
   })(window, document, "script", "dataLayer", "GTM-TXSMLJ6");
+
+  $(document).ready(function () {
+    $("#datepicker").datepicker({
+      format: "yyyy",
+      viewMode: "years",
+      minViewMode: "years",
+      autoclose: true
+    });
+  })
 </script>
 <!-- End Google Tag Manager -->
 
@@ -609,7 +628,7 @@ head>
                       <h2>About us</h2>
                       <ul>
                         <li>
-                          <a tabindex="-1" href="https://www.uowchk.edu.hk/about-us/message-from-the-president/">
+                          <a tabindex="-1" href="/about-us/message-from-the-president/">
                             Message from the President
                           </a>
                         </li>
@@ -947,7 +966,7 @@ head>
             <div class="grid-x align-left">
               <div class="uw-masthead__content">
                 <h1 class="cell js-scroll-reveal--left uw-masthead__title uw-masthead__subbrand--title">
-                  Search
+                  ORCAS
                 </h1>
               </div>
             </div>
@@ -955,49 +974,60 @@ head>
         </div>
       </section>
       <!-- /content-type-layout: public/master-header-with-nav !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
       <!--startindex-->
-      <!--Artical Hearded-->
-      <table style="color: #001641; border: 0px solid black; background-color: #f2f2f2;">
-        <tr>
-          <td>
-            <h6>views <br></h6>
-          </td>
-          <td>
-            <h2>Social Science</h2>
-          </td>
-          <td>
-            <section class="page-content grid-container uw-text-block">
-              <span id="d.en.105001"></span>
-              <div class="grid-x grid-padding-x">
-                <div class="cell large-auto">
-                  <p style="text-align: right">
-                    <a href="https://www.uowchk.edu.hk/current-students/student-learning-support-system/">Back</a>
-                  </p>
-                </div>
-              </div>
-            </section>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <hr>
-          </td>
-          <td>
-            <h4>Chris Fu Social science club</h4>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <h3>Video | Published Online: 16 June 2022 </h3>
-          </td>
-          <td></td>
-        </tr>
-      </table>
+      <section class="page-content grid-container uw-text-block">
+        <span id="d.en.105001"></span>
+        <div class="grid-x grid-padding-x">
+          <div class="cell large-auto">
+            <p style="text-align: right">
+              <a href="https://www.uowchk.edu.hk/current-students/student-learning-support-system/">Back</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="page-form grid-container">
+        <form>
+          <label for="se">student Email:</label><br>
+          <input type="text" id="se" name="ses"><br>
+          <label for="topic">Topic:</label><br>
+          <input type="text" id="topic" name="topic">
+          <label for="author">Author:</label><br>
+          <input type="text" id="author" name="author"><br>
+          <label for="datepicker">Publish year:</label><br>
+          <input type="text" class="form-control" name="datepicker" id="datepicker" />
+          <label for="publisher">Publisher:</label><br>
+          <input type="text" id="publisher" name="publisher"><br>
+          <p>Subject: (you can choose more than one)<span style="color: #ED0A00;">*</span></p>
+          </p>
+          <input type="checkbox" id="SnT" name="SnT" value="SnT">
+          <label for="SnT"> Science & Technology</label>
+          <input type="checkbox" id="AnH" name="AnH" value="AnH">
+          <label for="AnH"> Arts & Humanities</label>
+          <input type="checkbox" id="SocialScience" name="SocialScience" value="SocialScience">
+          <label for="SocialScience"> Social Science</label>
+          <input type="checkbox" id="Business" name="Business" value="Business">
+          <label for="Business"> Business</label>
+          <input type="checkbox" id="Others" name="Others" value="Others">
+          <label for="Others"> Others</label><br>
+          <p>Resources Type: (you can choose more than one) <span style="color: #ED0A00;">*</span></p>
+          <input type="checkbox" id="JournalArticle" name="JournalArticle" value="JournalArticle">
+          <label for="JournalArticle"> Journal Article</label>
+          <input type="checkbox" id="NewspaperArticle" name="NewspaperArticle" value="NewspaperArticle">
+          <label for="NewspaperArticle"> Newspaper Article</label>
+          <input type="checkbox" id="Video" name="Video" value="Video">
+          <label for="Video"> Video</label>
+          <label for="link">Link:</label>
+          <input type="text" id="link" name="link">
+          <h6 style="color: #ED0A00;">Reminder: <br> Please input one link per upload only. <br> Please double check
+            link is valid before submission.</h6>
+          <button style="background-color: #001641; color: #ffffff; border-radius: 12px; font-size: 24px; padding: 12px 28px;" onclick="DownloadCSV">Download CSV Template</button>
+          
+          <input style="background-color:ED0A00; color: #ffffff; font-size: 20px; padding: 12px 28px;" type="submit" value="Submit">
 
-
-
-
+          <br></br>
+        </form>
+      </section>
     </main>
     <!--stopindex-->
     <!-- new Vivo-based (in Section Meta content type) "public/footer" -->
@@ -1175,14 +1205,14 @@ head>
 
   <div style="display: none; visibility: hidden">
     <script type="text/javascript">
-      (function () {
-        var a = document.createElement("script");
-        a.type = "text/javascript";
-        a.async = !0;
-        a.src = "//siteimproveanalytics.com/js/siteanalyze_13656.js";
-        var b = document.getElementsByTagName("script")[0];
-        b.parentNode.insertBefore(a, b);
-      })();
+        (function () {
+          var a = document.createElement("script");
+          a.type = "text/javascript";
+          a.async = !0;
+          a.src = "//siteimproveanalytics.com/js/siteanalyze_13656.js";
+          var b = document.getElementsByTagName("script")[0];
+          b.parentNode.insertBefore(a, b);
+        })();
     </script>
   </div>
 </body>
