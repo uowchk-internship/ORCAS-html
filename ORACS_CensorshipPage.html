@@ -412,13 +412,8 @@ head>
       position: static;
       width: auto;
     }
-    p.description{
-        font-family: 'Inter';
-    }
-    h1.checklink {
-        color: #ED0A00;
-        font-family: 'Inter';
-        font-style: normal;
+    td, th {
+      border-style: none;
     }
   </style>
   <link
@@ -1057,7 +1052,7 @@ head>
                 <ul class="no-bullet">
                   <li>
                     <a href="/about-us/about-the-faculties/arts-humanities/"
-                      >Rank</a
+                      >Staff</a
                     >
                   </li>
                   <li>
@@ -1066,8 +1061,9 @@ head>
                     >
                   </li>
                   <li>
-                    <a href="/about-us/about-the-faculties/science-technology/">
-                      Resources Approval</a>
+                    <a href="/about-us/about-the-faculties/science-technology/"
+                      >Resources Approval</a
+                    >
                   </li>
                   <li>
                     <a href="/about-us/about-the-faculties/science-technology/"
@@ -1076,7 +1072,6 @@ head>
                   </li>
                   <li>
                     <a href="/about-us/about-the-faculties/science-technology/"
-                      >Search</a
                       >Logout</a
                     >
                   </li>
@@ -1093,7 +1088,7 @@ head>
                 <h1
                   class="cell js-scroll-reveal--left uw-masthead__title uw-masthead__subbrand--title"
                 >
-                  Staff 
+                Resources Approval 
                 </h1>
               </div>
             </div>
@@ -1103,19 +1098,64 @@ head>
       <!-- /content-type-layout: public/master-header-with-nav !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
       <!-- startchecklist -->
       <section>
-        <div id="straigt-line">
-          <svg width="60" height="1200">
-            <rect height="60" height="1200" style="fill:#ED0A00;stroke-width:1;stroke:#ED0A00"></rect>
-          </svg>
-        </div>
-            <div id="select-part">
-                <h1 class="checklink" >Students Approval</h1>
-                <p class="description">Review the learning resources submitted by students</p>
-                <h1 class="checklink">Management</h1>
-                <p  class="description">Manage website’s articles and videos </p>
-                <h1 class ="checklink" >Upload</h1>
-                <p class="description">Upload learning resources</p>
-            </div>
+        <table id = "check-list">
+          <tr>
+            <th>Show:</th>
+            <th>All</th>
+            <th>Approved</th>
+            <th>Denied</th> 
+          </tr>
+        </table>
+        <table id="Detail-list">
+          <tr>
+            <td>Topic</td>
+          </tr>
+          <tr>
+            <td>Social Science</td>
+            <td><button>Show Detail</button></td>
+          </tr>
+          <tr>
+            <td>Arts & Humanities</td>
+            <td><button>Show Detail</button></td>
+          </tr>
+          <tr>
+            <td>Science & Technology</td>
+            <td><button>Show Detail</button></td>
+          </tr>
+          <tr>
+            <td>Business</td>
+            <td><button>Show Detail</button></td>
+          </tr>
+          <tr>
+            <td>other</td>
+            <td><button>Show Detail</button></td>
+          </tr>
+        </table>
+        <table id = "button-list">
+          <tr>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td><button><a href=""></a></button></td>
+            <td><button><a href=""></a></button></td>
+          </tr>
+          <tr>
+            <td><button><a href=""></a></button></td>
+            <td><button><a href=""></a></button></td>
+          </tr>
+          <tr>
+            <td><button><a href=""></a></button></td>
+            <td><button><a href=""></a></button></td>
+          </tr>
+          <tr>
+            <td><button><a href=""></a></button></td>
+            <td><button><a href=""></a></button></td>
+          </tr>
+          <tr>
+            <td><button><a href=""></a></button></td>
+            <td><button><a href=""></a></button></td>
+          </tr>
+        </table>
       </section>
       <!--startindex-->
       <section class="page-content grid-container uw-text-block">
