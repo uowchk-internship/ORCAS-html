@@ -412,13 +412,22 @@ head>
       position: static;
       width: auto;
     }
-    p.description{
-        font-family: 'Inter';
+    #select-part{
+	  font-family: sans-serif;
+    font-style: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
-    h1.checklink {
-        color: #ED0A00;
-        font-family: 'Inter';
-        font-style: normal;
+    h1.checklink{
+	    color:#ED0A00;
+      font-size: 2.5em;
+    }
+    #left-col{
+	  float: left;
+    padding-right: 20px;
+    }
+    p.description{
+      line-height: 0px;
     }
   </style>
   <link
@@ -1056,29 +1065,24 @@ head>
                 <p class="page-navigator__title">ORCAS</p>
                 <ul class="no-bullet">
                   <li>
-                    <a href="/about-us/about-the-faculties/arts-humanities/"
-                      >Rank</a
-                    >
+                    <a href="/about-us/about-the-faculties/arts-humanities/">
+                      Rank</a>
                   </li>
                   <li>
-                    <a href="/about-us/about-the-faculties/business/"
-                      >Upload</a
-                    >
+                    <a href="/about-us/about-the-faculties/business/">
+                      Upload</a>
                   </li>
                   <li>
                     <a href="/about-us/about-the-faculties/science-technology/">
                       Resources Approval</a>
                   </li>
                   <li>
-                    <a href="/about-us/about-the-faculties/science-technology/"
-                      >Management</a
-                    >
+                    <a href="/about-us/about-the-faculties/science-technology/">
+                      Management</a>
                   </li>
                   <li>
-                    <a href="/about-us/about-the-faculties/science-technology/"
-                      >Search</a
-                      >Logout</a
-                    >
+                    <a href="/about-us/about-the-faculties/science-technology/">
+                    Logout</a>
                   </li>
                 </ul>
                 <button class="page-navigator-more">Show more</button>
@@ -1103,11 +1107,9 @@ head>
       <!-- /content-type-layout: public/master-header-with-nav !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
       <!-- startchecklist -->
       <section>
-        <div id="straigt-line">
-          <svg width="60" height="1200">
-            <rect height="60" height="1200" style="fill:#ED0A00;stroke-width:1;stroke:#ED0A00"></rect>
-          </svg>
-        </div>
+        <svg width="30" height="300" id="left-col">
+          <rect width="30" height="300" style="fill:#ED0A00;stroke-width:3;stroke:#ED0A00" />
+        </svg>
             <div id="select-part">
                 <h1 class="checklink" >Students Approval</h1>
                 <p class="description">Review the learning resources submitted by students</p>
