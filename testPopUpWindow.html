@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0855ae;
+        }
+
+        .popup {
+            background-color: #ffffff;
+            width: 420px;
+            padding: 30px 40px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            border-radius: 8px;
+            display: none;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+
+        }
+
+        .popup button {
+            font-size: 30px;
+            display: block;
+            width: 150px;
+            position: relative;
+            margin: 10px auto;
+            text-align: center;
+            background-color: #ed0a00;
+            border-radius: 0px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 0;
+        }
+        .popup h1 {
+            margin-top: -20px;
+        }
+        .popup img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="popup">
+        <img src="Image/checked.png" alt="">
+        <h1>Upload Succeeded</h1>
+
+        <button id="close">Close</button>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                1000
+            )
+        });
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
