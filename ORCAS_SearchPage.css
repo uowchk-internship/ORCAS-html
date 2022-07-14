@@ -99,6 +99,11 @@ button:focus, button:hover {
     margin-left: 20px;
 }
 
+#search-back {
+    text-align: right;
+    margin-top: -40px;
+}
+
 #checkbox-dropdown-list-1, #checkbox-dropdown-list-2 {
     list-style-type: none;
     margin-top: -10px;
