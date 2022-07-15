@@ -1,33 +1,37 @@
-#search-bar, .types-container, .search-body {
-    font-family: "Montserrat";
+body {
+    width: 100%;
+    margin: 0px;
 }
 
 /* Search Bar */
 #search-bar {
     overflow: hidden;
-    height: auto;
     background-color: #e9e9e9;
 }
 
 #search-bar #search-container {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
     margin-bottom: 20px;
 }
 
 #search-bar input[type=text] {
     width: 60%;
-    padding-left: 10px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 18px;
     border: none;
-    outline: none;
+    font-family: "Times New Roman";
 }
 
 #search-bar #search-container button {
     background: #fff;
     font-size: 20px;
     border: none;
+}
+
+#search-back {
+    text-align: right;
+    margin-right: 30px;
 }
 
 *:focus {
@@ -37,9 +41,8 @@
 /* Resources Types */
 .types-container {
     position: relative;
-    height: auto;
     background-color: #e9e9e9;
-    margin-bottom: 15px;
+    margin-left: -15px;
 }
 
 .types-container:before {
@@ -52,16 +55,15 @@
     background: #e9e9e9;
 }
 
-.col {
-    background: none;
+.type {
 	border: none;
-	padding: 5px 10px;
+	padding: 7px 10px;
     background-color:#001641;
     border-radius: 7px;
-    margin-right: 3px;
     font-size: 13px;
     color: white;
     position: relative;
+    font-family: "Times New Roman"
 }
 
 button:focus, button:hover {
@@ -87,21 +89,18 @@ button:focus, button:hover {
     float: left;
     width: 30%;
     margin-left: 10px;
+    font-family: "Times New Roman";
 }
 
 #rightDiv {
     float: left;
     width: 65%;
+    font-family: "Times New Roman";
 }
 
 /* filter */
 .search-body {
     margin-left: 20px;
-}
-
-#search-back {
-    text-align: right;
-    margin-top: -40px;
 }
 
 #checkbox-dropdown-list-1, #checkbox-dropdown-list-2 {
@@ -111,14 +110,19 @@ button:focus, button:hover {
     display: block;
 }
 
+#checkbox-dropdown-list-1 li, #checkbox-dropdown-list-2 li {
+    margin-top: 3px;
+}
+
 .conT {
     margin-left: 10px;
     font-size: 16px;
 }
 
 #filter-hr {
-    margin-top: -8px;
+    margin-top: -18px;
     width: 75%;
+    float: left;
 }
 
 .filter-arrow {
@@ -127,7 +131,7 @@ button:focus, button:hover {
     border: 8px solid transparent;
     border-bottom-color: #000;
     transform: rotate(180deg);
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 #publicationYear, #subject {
@@ -141,11 +145,12 @@ button:focus, button:hover {
     height: 30px;
     border: none;
     padding: 1px 30px;
+    font-size: 15px;
 }
 
 /* for Search Results */
 #result-container {
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: #e9e9e9;
     width: 100%;
     border: none;
@@ -161,26 +166,30 @@ button:focus, button:hover {
 }
 
 .title {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 20px;
     overflow: hidden;
-    margin-right: -20px;
+    margin-left: 20px;
 }
 
 .author {
-    font-size: 14px;
-    margin-top: 12px;
+    font-size: 16px;
     width: auto;
+    float: right;
+    margin-right: 50px;
+    margin-top: -18px;
 }
 
 .detail {
-    padding-top: 15px;
-    font-size: 16px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
 /* for Pagination*/
 .pagination div {
-    margin: 30px auto 20px;
+    text-align: center;
+    margin: 30px 0px 20px;
 }
 
 .pagination button {
@@ -190,6 +199,7 @@ button:focus, button:hover {
     font-size: 16px;
     border: none;
     background-color: #fff;
+    font-family: "Times New Roman";
 }
 
 .pagination button:hover {
